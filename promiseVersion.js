@@ -1,3 +1,8 @@
+const { getName } = require("./getName");
+const userName = getName();
+
+doSummerChores(userName);
+
 function fellAsleep() {
   return Math.random() < 0.2;
 }

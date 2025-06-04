@@ -1,5 +1,11 @@
-const SLEEP_CHANCE = 0.2;
-doSummerChores("Ryan");
+const { getName } = require("./getName");
+const userName = getName();
+
+doSummerChores(userName);
+
+function fellAsleep() {
+  return Math.random() < 0.2;
+}
 
 function mowYard(name, callback) {
   setTimeout(() => {
@@ -9,7 +15,7 @@ function mowYard(name, callback) {
 }
 
 function weedEat(name, callback) {
-  if (Math.random() < SLEEP_CHANCE) {
+  if (fellAsleep()) {
     console.log(name + " got tired and fell asleep");
     return;
   }
@@ -21,7 +27,7 @@ function weedEat(name, callback) {
 }
 
 function trimHedges(name, callback) {
-  if (Math.random() < SLEEP_CHANCE) {
+  if (fellAsleep()) {
     console.log(name + " got tired and fell asleep");
     return;
   }
@@ -33,7 +39,7 @@ function trimHedges(name, callback) {
 }
 
 function collectWood(name, callback) {
-  if (Math.random() < SLEEP_CHANCE) {
+  if (fellAsleep()) {
     console.log(name + " got tired and fell asleep");
     return;
   }
@@ -45,7 +51,7 @@ function collectWood(name, callback) {
 }
 
 function waterGarden(name, callback) {
-  if (Math.random() < SLEEP_CHANCE) {
+  if (fellAsleep()) {
     console.log(name + " got tired and fell asleep");
     return;
   }
