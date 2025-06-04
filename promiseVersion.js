@@ -22,7 +22,7 @@ function weedEat(name) {
       return reject(name + " got tired and fell asleep");
     }
     setTimeout(() => {
-      console.log(name + " finsihed using the weed eater.");
+      console.log(name + " finished using the weed eater.");
       resolve();
     }, 1500);
   });

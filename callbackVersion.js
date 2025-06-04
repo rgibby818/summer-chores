@@ -21,7 +21,7 @@ function weedEat(name, callback) {
   }
 
   setTimeout(() => {
-    console.log(name + " finsihed using the weed eater.");
+    console.log(name + " finished using the weed eater.");
     callback();
   }, 1500);
 }
